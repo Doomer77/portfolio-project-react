@@ -43,7 +43,7 @@ const Contacts = () => {
   return (
     <div id="contacts" className="contacts">
       <div className="text-center">
-        <h1>Contact me</h1>
+        <h1>Напишите мне</h1>
         <p>
           Заполните форму и опишите потребности вашего проекта, и я свяжусь с
           вами в ближайшее время.

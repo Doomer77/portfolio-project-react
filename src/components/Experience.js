@@ -10,65 +10,64 @@ const Experience = () => {
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2014-2015</h3>
+            <h3>HTML5</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-              omnis laboriosam odio deserunt reprehenderit optio cum ratione
-              sequi pariatur deleniti iste perspiciatis officiis minima iusto
-              hic, ipsa ea dicta velit! Quos, placeat ratione. Sunt cumque
-              delectus asperiores et quas qui.
+              Умение создавать современные сайты и приложения, используя
+              современные семантическую верстку и инструменты в HTML5.
             </p>
           </div>
         </div>
         <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2015-2016</h3>
+            <h3>CSS3 и SASS</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-              omnis laboriosam odio deserunt reprehenderit optio cum ratione
-              sequi pariatur deleniti iste perspiciatis officiis minima iusto
-              hic, ipsa ea dicta velit! Quos, placeat ratione. Sunt cumque
-              delectus asperiores et quas qui.
+              Использую современные свойства CSS3 для создания адаптивных и
+              кроссбраузерных приложении, а также для создания красивых анимации
+              и эфектов. Применяю SASS для более быстрой и эфективной
+              стилизации, а так же для удобного использования БЭМ. Для быстрой
+              стилизации компонентов использую Bootstrap.
             </p>
           </div>
         </div>
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2016-2017</h3>
+            <h3>JavaScript</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-              omnis laboriosam odio deserunt reprehenderit optio cum ratione
-              sequi pariatur deleniti iste perspiciatis officiis minima iusto
-              hic, ipsa ea dicta velit! Quos, placeat ratione. Sunt cumque
-              delectus asperiores et quas qui.
+              Как основной инструмент для написания фронтендной части
+              приложений, использую современные возможности JavaScript, с
+              применением основных принципов кроссбраузерности.
             </p>
           </div>
         </div>
         <div className="timeline-block timeline-block-left">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2017-2018</h3>
+            <h3>React JS</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-              omnis laboriosam odio deserunt reprehenderit optio cum ratione
-              sequi pariatur deleniti iste perspiciatis officiis minima iusto
-              hic, ipsa ea dicta velit! Quos, placeat ratione. Sunt cumque
-              delectus asperiores et quas qui.
+              Для создания более гибких и отзывчивых пользовательских
+              интерфейсов, применяю React JS.
             </p>
           </div>
         </div>
         <div className="timeline-block timeline-block-right">
           <div className="marker"></div>
           <div className="timeline-content">
-            <h3>2018-2019</h3>
+            <h3>PHP</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-              omnis laboriosam odio deserunt reprehenderit optio cum ratione
-              sequi pariatur deleniti iste perspiciatis officiis minima iusto
-              hic, ipsa ea dicta velit! Quos, placeat ratione. Sunt cumque
-              delectus asperiores et quas qui.
+              Имею базовые основы процедурного и объектно-ориентированного
+              программирования на PHP с использованием базовых запросов к MySQL.
+            </p>
+          </div>
+        </div>
+        <div className="timeline-block timeline-block-left">
+          <div className="marker"></div>
+          <div className="timeline-content">
+            <h3>Photoshop</h3>
+            <p>
+              Для создания и работы с макетами сайтов, использую инструменты
+              Adobe Photoshop.
             </p>
           </div>
         </div>

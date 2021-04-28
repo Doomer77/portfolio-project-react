@@ -1,8 +1,8 @@
 import React from "react";
-import netflix from "../images/netflix.png";
-import cityGuideApp from "../images/city-guide-app.png";
+import bipservice from "../images/bipservice.png";
+import genprofi from "../images/genprofi.png";
+import keksobooking from "../images/keksobooking.png";
 import portfolio from "../images/portfolio.png";
-import taskManager from "../images/task-manager.png";
 //FONTAWESOME IMPORT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
@@ -11,195 +11,251 @@ import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
-  //Netflix
-  const openPopupboxNetflix = () => {
+  //BIP
+  const openPopupboxBIP = () => {
     const content = (
       <>
         <img
           className="portfolio-image-popupbox"
-          src={netflix}
-          alt="netflix clone app..."
+          src={bipservice}
+          alt="Сайт сервисной фирмы ООО НПФ БИП сервис"
         />
         <p>
-          amet nulla facilisi morbi tempus iaculis urna id volutpat lacus
-          laoreet non curabitur gravida arcu ac tortor dignissim convallis
-          aenean et tortor at.
+          Мой первый рабочий проект, реализованный для сервисной фирмы ООО "НПФ
+          БИП сервис". Для создания сайта, был разработан макет в Adobe
+          Phtoshop. Верстка сайта реализована на CSS Flexbox. Для разработки
+          интерактивности сайта применялись Jquery плагины Fancybox, Slick
+          slider. Был применены SASS и БЭМ для быстрой стилизации компонентов. В
+          качестве инструментов сборки проекта применялся менеджер пакетов NPM.
         </p>
+        <b>Demo: </b>
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open("https://www.bipservice-moskva.ru/", "_blank")
+          }
+        >
+          https://www.bipservice-moskva.ru/
+        </a>
+        <br />
         <b>GitHub: </b>
         <a
           className="hyper-link"
-          onClick={() => window.open("https://github.com/Doomer77/natours")}
+          onClick={() =>
+            window.open("https://github.com/Doomer77/bipsrvce", "_blank")
+          }
         >
-          https://github.com/Doomer77/natours
+          https://github.com/Doomer77/bipsrvce
         </a>
       </>
     );
     PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "Сайт сервисной фирмы ООО НПФ БИП сервис",
+        },
+        fedeIn: true,
+        fadeInSpeed: 500,
+      },
+    });
   };
 
-  const popupboxConfigNetflix = {
-    titleBar: {
-      enable: true,
-      text: "Netflix clone App Project",
-    },
-    fedeIn: true,
-    fadeInSpeed: 500,
-  };
-
-  //City Guide App
-  const openPopupboxCityGuide = () => {
+  //Genprofi
+  const openPopupboxGenprofi = () => {
     const content = (
       <>
         <img
           className="portfolio-image-popupbox"
-          src={cityGuideApp}
-          alt="City Guide App Project"
+          src={genprofi}
+          alt="Сайт сервисной фирмы ООО Генпрофи"
         />
         <p>
-          amet nulla facilisi morbi tempus iaculis urna id volutpat lacus
-          laoreet non curabitur gravida arcu ac tortor dignissim convallis
-          aenean et tortor at.
+          Рабочий проект, реализованный для сервисной фирмы ООО "Генпрофи". Для
+          создания сайта, был разработан макет в Adobe Phtoshop. Верстка сайта
+          реализована на CSS Flexbox. Для разработки интерактивности сайта
+          применялись Jquery плагины Fancybox, Slick slider. Был применены SASS
+          и БЭМ для быстрой стилизации компонентов. В качестве инструментов
+          сборки проекта применялся менеджер пакетов NPM.
         </p>
+        <b>Demo: </b>
+        <a
+          className="hyper-link"
+          onClick={() => window.open("https://www.genprofi.ru/", "_blank")}
+        >
+          https://www.genprofi.ru/
+        </a>
+        <br />
         <b>GitHub: </b>
         <a
           className="hyper-link"
-          onClick={() => window.open("https://github.com/Doomer77/genprofi")}
+          onClick={() =>
+            window.open("https://github.com/Doomer77/genprofi", "_blank")
+          }
         >
           https://github.com/Doomer77/genprofi
         </a>
       </>
     );
     PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "Сайт сервисной фирмы ООО Генпрофи",
+        },
+        fedeIn: true,
+        fadeInSpeed: 500,
+      },
+    });
   };
 
-  const popupboxConfigCityGuide = {
-    titleBar: {
-      enable: true,
-      text: "City Guide App Project",
-    },
-    fedeIn: true,
-    fadeInSpeed: 500,
+  //Keksobooking App
+  const openPopupboxKeksobooking = () => {
+    const content = (
+      <>
+        <img
+          className="portfolio-image-popupbox"
+          src={keksobooking}
+          alt="Учебный проект Keksobooking"
+        />
+        <p>
+          «Кексобукинг» — мой основной проект, который я успешно защитил на
+          интенсиве "JavaScript. Профессиональная разработка веб-интерфейсов
+          Уровень 1". Программа данного курса была направлена на работу со
+          встроенным API, DOM, обработками событий, модулями, со структурой
+          данных и производительностью. А так же был рассмотрен сборщик проектов
+          Webpack.
+        </p>
+        <b>Demo: </b>
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open("http://keksobooking.pjparts.ru/", "_blank")
+          }
+        >
+          http://keksobooking.pjparts.ru/
+        </a>
+        <br />
+        <b>GitHub: </b>
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open("https://github.com/Doomer77/1392667-keksobooking-21")
+          }
+        >
+          https://github.com/Doomer77/1392667-keksobooking-21
+        </a>
+      </>
+    );
+    PopupboxManager.open({ content });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "Учебный проект Keksobooking",
+        },
+        fedeIn: true,
+        fadeInSpeed: 500,
+      },
+    });
   };
 
-  //Portfolio App
+  //Portfolio
   const openPopupboxPortfolio = () => {
     const content = (
       <>
         <img
           className="portfolio-image-popupbox"
           src={portfolio}
-          alt="Portfolio App Project"
+          alt="Проект моего портфолио"
         />
         <p>
-          amet nulla facilisi morbi tempus iaculis urna id volutpat lacus
-          laoreet non curabitur gravida arcu ac tortor dignissim convallis
-          aenean et tortor at.
+          Проект моего рабочего портфолио, разработанный на React JS и Bootstrap
+          4.
         </p>
         <b>GitHub: </b>
         <a
           className="hyper-link"
-          onClick={() => window.open("https://github.com/Doomer77/portfolio-2")}
+          onClick={() =>
+            window.open(
+              "https://github.com/Doomer77/portfolio-project-react",
+              "_blank"
+            )
+          }
         >
-          https://github.com/Doomer77/portfolio-2
+          https://github.com/Doomer77/portfolio-project-react
         </a>
       </>
     );
     PopupboxManager.open({ content });
-  };
-
-  const popupboxConfigPortfolio = {
-    titleBar: {
-      enable: true,
-      text: "Portfolio App Project",
-    },
-    fedeIn: true,
-    fadeInSpeed: 500,
-  };
-
-  //Task Manager
-  const openPopupboxTaskManager = () => {
-    const content = (
-      <>
-        <img
-          className="portfolio-image-popupbox"
-          src={taskManager}
-          alt="Task Manager App Project"
-        />
-        <p>
-          amet nulla facilisi morbi tempus iaculis urna id volutpat lacus
-          laoreet non curabitur gravida arcu ac tortor dignissim convallis
-          aenean et tortor at.
-        </p>
-        <b>GitHub: </b>
-        <a
-          className="hyper-link"
-          onClick={() => window.open("https://github.com/Doomer77/nexter")}
-        >
-          https://github.com/Doomer77/nexter
-        </a>
-      </>
-    );
-    PopupboxManager.open({ content });
-  };
-
-  const popupboxConfigTaskManager = {
-    titleBar: {
-      enable: true,
-      text: "Task Manager App Project",
-    },
-    fedeIn: true,
-    fadeInSpeed: 500,
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "Проект моего портфолио",
+        },
+        fedeIn: true,
+        fadeInSpeed: 500,
+      },
+    });
   };
 
   return (
     <div id="portfolio" className="portfolio-wrapper">
       <div className="container">
-        <h1 className="text-uppercase text-center py-5">portfolio</h1>
+        <h1 className="text-uppercase text-center py-5">Мои проекты</h1>
         <div className="image-box-wrapper row justify-content-center">
-          <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
+          <div className="portfolio-image-box" onClick={openPopupboxBIP}>
             <img
               className="portfolio-image"
-              src={netflix}
-              alt="netflix clone"
+              src={bipservice}
+              alt="Сайт сервисной фирмы ООО НПФ БИП сервис"
             />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
 
-          <div className="portfolio-image-box" onClick={openPopupboxCityGuide}>
+          <div className="portfolio-image-box" onClick={openPopupboxGenprofi}>
             <img
               className="portfolio-image"
-              src={cityGuideApp}
-              alt="city guide app"
+              src={genprofi}
+              alt="Сайт сервисной фирмы ООО Генпрофи"
             />
-            <div className="overflow"></div>
-            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-          </div>
-
-          <div className="portfolio-image-box" onClick={openPopupboxPortfolio}>
-            <img className="portfolio-image" src={portfolio} alt="portfolio" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
 
           <div
             className="portfolio-image-box"
-            onClick={openPopupboxTaskManager}
+            onClick={openPopupboxKeksobooking}
           >
             <img
               className="portfolio-image"
-              src={taskManager}
-              alt="task manager app"
+              src={keksobooking}
+              alt="Учебный проект Keksobooking"
+            />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
+
+          <div className="portfolio-image-box" onClick={openPopupboxPortfolio}>
+            <img
+              className="portfolio-image"
+              src={portfolio}
+              alt="Проект моего портфолио"
             />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
         </div>
       </div>
-      <PopupboxContainer {...popupboxConfigNetflix} />
-      <PopupboxContainer {...popupboxConfigCityGuide} />
-      <PopupboxContainer {...popupboxConfigPortfolio} />
-      <PopupboxContainer {...popupboxConfigTaskManager} />
+      <PopupboxContainer />
     </div>
   );
 };

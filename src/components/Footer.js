@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -29,18 +30,67 @@ const Footer = () => {
           <div className="col-lg-3 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
-                <a className="footer-nav">Главная</a>
+                <Link
+                  smooth={true}
+                  to="home"
+                  offset={-110}
+                  className="footer-nav"
+                  href="#"
+                >
+                  Главная
+                </Link>
                 <br />
-                <a className="footer-nav">Обо мне</a>
+                <Link
+                  smooth={true}
+                  to="about"
+                  offset={-110}
+                  className="footer-nav"
+                  href="#"
+                >
+                  Обо мне
+                </Link>
                 <br />
-                <a className="footer-nav">Услуги</a>
+                <Link
+                  smooth={true}
+                  to="certificates"
+                  offset={-110}
+                  className="footer-nav"
+                  href="#"
+                >
+                  Сертификаты
+                </Link>
+                <br />
               </div>
               <div className="col">
-                <a className="footer-nav">Опыт работы</a>
+                <Link
+                  smooth={true}
+                  to="expirience"
+                  offset={-110}
+                  className="footer-nav"
+                  href="#"
+                >
+                  Навыки
+                </Link>
                 <br />
-                <a className="footer-nav">Портфолио</a>
+                <Link
+                  smooth={true}
+                  to="portfolio"
+                  offset={-110}
+                  className="footer-nav"
+                  href="#"
+                >
+                  Портфолио
+                </Link>
                 <br />
-                <a className="footer-nav">Котакты</a>
+                <Link
+                  smooth={true}
+                  to="contacts"
+                  offset={-110}
+                  className="footer-nav"
+                  href="#"
+                >
+                  Котакты
+                </Link>
               </div>
             </div>
           </div>
